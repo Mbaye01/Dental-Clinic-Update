@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+           
+        <style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+      
+  form {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  margin: auto;
+  margin-top: 80px;
+  border:  2px solid #516EFF;
+
+}
+
+h2 {
+  margin-left: 10px;
+  color: #516EFF;
+  text-align: center;
+  
+}
+
+label {
+  font-size: 14px;
+  text-align: start;
+  margin-bottom: -5px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+input {
+  width: 320px;
+  padding: 5px 10px ;
+  margin: 10px;
+ 
+}
+
+#submit { 
+  background-color: #516EFF;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: red;
+  
+  
+}
+#submit:hover {
+  background-color: #2744d6;
+  cursor: pointer;
+  transition-duration: 0.75s;
+}
+
+
+
+#submit { 
+  background-color: #516EFF;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  border: navy;
+
+}
+#submit:hover {
+  background-color: #2744d6;
+  cursor: pointer;
+  transition-duration: 0.75s;
+}
+/* .separator::after { 
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 1px;
+  left: 63px;
+  bottom: 165px;
+  background-color: var(--black50);
+}
+.separator::before { 
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 1px;
+  right: 75px;
+  bottom: 165px;
+  background-color: var(--black50);
+} */
+
+
+.sign-with{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+button{
+  padding: 8px 3px;
+  border-radius: 5px;
+  border: 1px var(--black50) solid;
+  background-color: var(--white);
+  
+
+}
+
+button:hover {
+  background-color: var(--signihoverColor);
+  cursor: pointer;
+  transition-duration: 0.5s;
+
+}
+.separator {
+    color: #516EFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+a { 
+  /* color: var(--blue); */
+  color: #516EFF;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* code CSS aproprié  à la page de Sign Up */
+.get-start {
+margin-bottom: 30px;
+}
+.or {
+  margin: 0px;
+}
+.or::after { 
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 1px;
+  left: 63px;
+  bottom: 135px;
+  background-color: var(--black50);
+}
+.or::before { 
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 1px;
+  right: 75px;
+  bottom: 135px;
+  background-color: var(--black50);
+}
+
+
+
+
+        </style>
+           
+    <section class="contenaire">
+        <form action="">
+          <div class="menu">
+            <a href="index.html"> <img src="images/logo.png" alt="" width="100"></a>
+          </div>
+            <h2 class="get-start">Login</h2>
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email"  placeholder="Email" required />
+
+            <div class="password-forget">
+                <label for="password">Password</label>
+            </div>
+            <input type="password" name="password" id="password"  placeholder="Password" required />
+            <input type="submit" name="submit" value="Login" id="submit"/>
+        
+            <a href="#">foget password ?</a>
+            <p class="separator">Or</p>
+            <input type="submit" name="submit" value="Creat an Acount" id="submit" />
+           
+        </div>
+        
+    
+    </section>
+</body>
+</html>

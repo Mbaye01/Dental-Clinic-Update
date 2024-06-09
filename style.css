@@ -133,7 +133,7 @@ nav .active{
     background-color: #007bff;
     height: 250px;
     display: flex;
-    margin-top: 200px;
+    margin-top: 40px;
   }
   .baner-right {
     width: 50%;
@@ -238,7 +238,7 @@ nav .active{
   
   }
   .specialkey .key {
-    width: 50%;
+    width: 40%;
     font-size: 25px;
     text-align: right;
     margin-top: 30px;
@@ -268,8 +268,8 @@ nav .active{
     width: 280px;
     height: 250px;
     margin-right: 20px;
-    background-color: #f8fafc;
-    margin-top: 10px;
+    background-color: rgb(245, 245, 245);
+    margin-top: 30px;
     margin-left: 40px;
     text-align: center;
     align-content: center;
@@ -302,6 +302,7 @@ nav .active{
         width: 80%;
         margin-left: 120px;
         margin-top: 10px;
+        align-items: center;
       }
       .specialkeywheare::after {
         content: "";
@@ -315,7 +316,7 @@ nav .active{
       
       .specialhw {
         width: 50%;
-        font-size: 40px;
+        font-size: 30px;
         
       }
       
@@ -332,7 +333,7 @@ nav .active{
         margin-right: 30px;
       }
       .keywho span {
-        color: #ffd700;
+        color: #00ff6a;
       }
 
       .ourhistory .historytext{
@@ -340,20 +341,23 @@ nav .active{
           border-radius: 10px;
           height: 300px;
           margin-top: 30px;
-          
-          
+        }
+
+        .keywho h2 {
+          color: red;
+
         }
         
         .historytext p{
           color: #777777;
           margin-left: 50px;
           font-size: 22px;
-        
+          margin-top: 30;      
         }
         
         .historytext h4 {
-        color: #333;
-        margin-top: -10px;
+        color: black;
+        margin-top: 20px;
         margin-left: 50px;
         }
         
@@ -580,7 +584,7 @@ nav .active{
         height: 200px;
         margin-left: 180px;
         margin-right: 200px;
-        margin-top: 160px;
+        margin-top: 0px;
         padding: 70px;
         border-radius: 20px;
         
@@ -594,6 +598,8 @@ nav .active{
         width: 500px;
         margin-left: 220px;  
         border-radius: 10px;
+        margin-top: -10px;
+        
       }
       .subsgrpform button {
         width: 150px;
@@ -610,8 +616,9 @@ nav .active{
       
       .Subscribe h2 {
         color: #ffffff;
-        margin-left:    260px;
+        margin-left:110px;
         line-height: 2;
+        margin-top: -20px;
       }
       
       

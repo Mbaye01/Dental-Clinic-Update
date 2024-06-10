@@ -8,7 +8,7 @@
   }
 header {
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #ffff;
     margin-bottom: 50px;
 }
@@ -32,13 +32,14 @@ nav {
     margin-top: 0;
     margin-left: 0px;
     margin: right 400px;
+    width: 100%;
 }
 
 nav .logo{
     display: flex;
     align-items: center;
     color: #333;
-    margin-right: 300px;
+    /* margin-right: 300px; */
     /* margin-left: 100px; */
   }
 .logo img {
@@ -162,10 +163,11 @@ nav .active{
 
   .docourserv {
     color: black;
+    margin-top: 200px;
   }
   .tresourserv {
     background-color: #bcbcbc9e;
-    width: 1200px;
+    width: 1000px;
     height: 2px;
     margin: auto;
     
@@ -201,9 +203,9 @@ nav .active{
   }
   
   .services .image {
-    width: 40%;
-    background-color: #f8fafc;
+    width: 30%;
     border-bottom-right-radius: 100px;
+    height: 400px;
   }
   
   .services .service-content {
@@ -213,8 +215,8 @@ nav .active{
   
   .servleft {
     /* border: 1px solid black; */
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     padding: 50px;
   }
   .servleft div{
@@ -409,6 +411,20 @@ nav .active{
         
         }
         
+        .docmeet {
+          text-align: center;
+          font-size: 1.5rem;
+        }
+        .tresdoc {
+          background-color: #bcbcbc9e;
+          width: 1200px;
+          height: 2px;
+          align-items: center;
+          margin-left: 70px;
+        }
+        .docmeet span {
+          color: #ffd700;
+        }
          
         .cercleimage {
           background-color: #ffffff;
@@ -493,27 +509,7 @@ nav .active{
           border-radius: 20px;
           
         }
-          .doc span {
-            color: #ffd700;
-            /* font-size: 45px; */
-          /* font-weight: 600; */
-          text-align: right;
-          width: 50%;
-            
-          }
-          .doc h2{
-            text-align: center;
-            font-weight: bold;
-            font-size: 2rem;
-            margin-top: 50px;
-          }
-          .tres {
-            width: 1200px;
-            margin-left: 80px;
-            height: 2px;
-            background-color: #bcbcbc9e;
-            margin-top: 5px;
-          }
+          
 
           .tresapp {
             width: 1200px;
@@ -584,10 +580,12 @@ nav .active{
      .phone {
       position: relative;
      }
-    
+    .phone {
+      width: 460;
+    }
     
      textarea {
-      width: 480px;
+      width: 470px;
       height: 100px;
       resize: none;
      }
@@ -744,13 +742,16 @@ nav .active{
   .menu-toggle {
       display: block;
   }
+  .nav {
+    width: 200px;
+  }
   nav ul {
       display: none;
       flex-direction: column;
-      width: 100%;
+      width: 40%;
       background-color: white;
       position: absolute;
-      top: 60px;
+      top: 50px;
       left: 0;
       padding: 0;
       line-height: 1px;
@@ -761,7 +762,7 @@ nav .active{
   }
   nav ul li a {
       padding: 10px 0;
-      width: 100%;
+      /* width: 100%; */
   }
   #close {
       display: none;
@@ -813,30 +814,17 @@ nav .active{
       text-align: center;
   }
   .docourserv {
-      color: black;
-      margin-top: 200px;
+    color: black;
+      margin-top: 210px;
+      text-align: center;
+      font-size: 1.4rem;
   }
   .tresourserv {
-      background-color: #bcbcbc9e;
-      width: 100%;
-  }
-  .specialkey {
-      flex-direction: column;
-      width: 100%;
-      margin-left: 0;
-      align-items: center;
-      margin-top: 150px;
-  }
-  .specialkey::after {
-      display: none;
-  }
-  .special, .key {
-      text-align: center;
-      width: 100%;
-  }
-  .key h2 {
-      text-align: center;
-  }
+    background-color:  #bcbcbc9e;
+    width: 90%;
+    height: 2px;
+}
+  
   .specialitems {
       flex-wrap: wrap;
       width: 100%;
@@ -847,32 +835,11 @@ nav .active{
       margin: 10px auto;
       width: 80%;
   }
-  .doc {
-      color: black;
-      margin-top: 50px;
-      font-size: 1.4rem;
-  }
-  .specialkeywheare {
-      flex-direction: column;
-      width: 100%;
-      margin-left: 0;
-      margin-top: 100px;
-      align-items: center;
-  }
-  .specialkeywheare::after {
-      display: none;
-  }
-  .specialhw, .keywho {
-      text-align: center;
-      width: 100%;
-  }
-  .keywho h2 {
-      text-align: center;
-  }
+  
   .treshware {
-      background-color: #bcbcbc9e;
-      width: 100%;
-      margin-left: 0;
+      background-color:  #bcbcbc9e;
+      width: 90%;
+      margin-left: 20px;
       height: 2px;
   }
   .docwhoware {
@@ -888,13 +855,17 @@ nav .active{
   }
   .ourhistory {
       flex-direction: column;
-      margin-top: 140px;
+      margin-top: 40px;
+      width: 400px;
+      height: 100px;
   }
   .ourhistory .left img {
-      width: 100%;
-      margin: 10px auto;
-      height: auto;
+      width: 170%;
+      height: 200px;
+      margin-top: auto;
+    
   }
+  
   .ourhistory .historytext {
       margin-top: 0;
       align-items: center;
@@ -919,31 +890,113 @@ nav .active{
       flex-direction: column;
       margin-left: 0;
       margin-top: 40px;
+      align-items: center;
+      margin-top: 40px;
+  }
+
+  .docmeet {
+    text-align: center;
+    margin-top: 320px;
+    font-size: 1.4rem;
+    
+  }
+  .tresdoc {
+    background-color:#bcbcbc9e ;
+    height: 2px;
+    width: 465px;
+    align-items: center;
+    margin-left: 10px;
+    margin-left: 10px;
+  }
+
+  .cercleimage {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .docs {
+    margin-bottom: 10px;
   }
   .doctorbtn {
       margin-top: 20px;
+      
+  }
+  .appoitmnt {
+    width: 200px;
+    text-align: center;
+    align-items: center;
+  }
+  .appoitmnt h2 {
+    text-align: center;
+justify-content: center;
+    margin-left: 10;
   }
   .tresapp {
       background-color: #bcbcbc9e;
-      margin-left: 0;
-      width: 100%;
+      margin-left: auto;
+      width: 60%;
+      height: auto;
+      margin-left: -20px;
   }
   .contact {
       flex-direction: column;
+      width: 100px;
+      height: 100px;
   }
-  .Subscribe {
-      width: 100%;
-      margin-left: 0;
-      margin-top: -5px;
+  .contac img {
+    background-color: red;
+    width: 60px;
+    height: 100px;
   }
-  .Subscribe h2 {
-      font-size: 1.5rem;
-      text-align: center;
+  .telephone input {
+    width: 100px;
   }
-  .subsgrpform {
-      margin-left: 0;
-      width: 100%;
+
+  .phone input  {
+    background-color: red;
+    width: 200px;
   }
+  .contactgroup button {
+    background-color: green;
+  }
+  
+  .contactgroup {
+    width: 180px;
+  }
+  #message {
+    background-color: rebeccapurple;
+    width: 442px;
+  }
+
+  @media (max-width: 768px) {
+    .Subscribe {
+        padding: 20px;
+        max-width: 95%;
+        
+        height: 250px;
+    }
+
+    .subsgrpform {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .subsgrpform input, .subsgrpform button {
+        width: 100%;
+        max-width: 300px; /* Largeur maximale pour les petits écrans */
+        margin-bottom: 10px;
+    }
+    .subsgrpform button {
+      margin-left: -10px;
+    }
+
+    .Subscribe h2 {
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+}
+  
   .footersecs {
       height: auto;
       flex-direction: column;

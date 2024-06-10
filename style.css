@@ -123,6 +123,8 @@ nav .active{
     border: 1px solid #007bff;
     color: #ffffff;
     margin-right: 1rem;
+    width: 220px;
+    font-size: 1rem;
   }
   .illistre_image img {
     border-radius: 20px;
@@ -156,6 +158,24 @@ nav .active{
     border-radius: 10px;
     color: #333;
     font-weight: 800;
+  }
+
+  .docourserv {
+    color: black;
+  }
+  .tresourserv {
+    background-color: #bcbcbc9e;
+    width: 1200px;
+    height: 2px;
+    margin: auto;
+    
+  }
+  .docourserv span {
+    color:  #ffd700;
+  }
+  .docourserv h2 {
+    text-align: center;
+    font-size: 2rem;
   }
 
   .services {
@@ -277,23 +297,29 @@ nav .active{
     border: 1px solid silver;
     }
     
-    .smiles {
-      background-color: #007bff;
-      height: 300px;
+    .docwhoware {
       text-align: center;
-      align-content: center;
-      color: white;
-      line-height: 2;
+      color: black;
       margin-top: 50px;
+      font-size: 1.5rem;
+      width: 1120px;
+      margin-left: 100px;
     }
-    .appmntbtn {
-      height: 50px;
-      margin-top: 20px;
-      width: 200px;
-      border-radius: 10px;
-      background-color: transparent;
-      border: 1px solid white;
-      color: white;
+    .docwhoware span{
+      text-align: center;
+      color: #ffd700;
+    }
+
+    .docwhoware h2 {
+      align-items: center;
+    } 
+
+    .treshware {
+        color: #ffd700;
+        background-color: #bcbcbc9e;
+        height: 2px;
+        align-items: center;
+        width: auto;
     }
     
     .specialkeywheare {
@@ -398,6 +424,7 @@ nav .active{
         .docs{
           text-align: center;
           align-content: center;
+          border: 1px solid #bcbcbc9e;
         }
         .contacte p, h1{
           width: 50px;
@@ -417,7 +444,7 @@ nav .active{
           border: #007bff;
           border-radius: 10px;
           border: 2px solid #007bff;
-          margin-top: 80px;
+          margin-top: 50px;
         }
         
         .baner3 {
@@ -560,7 +587,7 @@ nav .active{
     
     
      textarea {
-      width: 460px;
+      width: 480px;
       height: 100px;
       resize: none;
      }
@@ -579,53 +606,56 @@ nav .active{
       margin-left: 30px;
     }
 
-    .Subscribe {
+
+       
+       .Subscribe {
         background-color: #236483;
-        height: 200px;
-        margin-left: 180px;
-        margin-right: 200px;
-        margin-top: 0px;
-        padding: 70px;
+        height: 180px;
+        margin: 0 auto;
+        padding: 20px;
         border-radius: 20px;
-        
-      }
-      
-      .subsgrpform {
-        width: 180px;
+        max-width: 70%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .subsgrpform {
         display: flex;
-        height: 35px;
-        display: flex;
-        width: 500px;
-        margin-left: 220px;  
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 20px auto 0;
         border-radius: 10px;
-        margin-top: -10px;
-        
-      }
-      .subsgrpform button {
-        width: 150px;
+    }
+    
+    .subsgrpform button {
+        width: 120px; /* Largeur fixe similaire à l'exemple */
+        height: 40px; /* Hauteur fixe similaire à l'exemple */
         border-radius: 5px;
         border: #86aabc;
-      }
-      
-      .subsgrpform input {
+        margin-left: 10px;
+    }
+    
+    .subsgrpform input {
+        width: 200px; /* Largeur fixe similaire à l'exemple */
+        height: 40px; /* Hauteur fixe similaire à l'exemple */
         background-color: #86aabc;
         border-radius: 5px;
-        margin-right: 10px;
         border: navy;
-      }
-      
-      .Subscribe h2 {
+        margin-right: 10px;
+    }
+    
+    .Subscribe h2 {
         color: #ffffff;
-        margin-left:110px;
+        margin: 0 auto 20px;
         line-height: 2;
-        margin-top: -20px;
-      }
-      
+    }
       
       .footersecs {
         display: flex;
         background-color: #007bff;
-        height: 230px;
+        height: 280px;
         line-height: 2;
         color: #ffffff;
         margin-top: 80px;
@@ -709,73 +739,33 @@ nav .active{
 }
 
 /* Media Queries */
-@media (max-width: 768px) { /* Tablets */
-    .menu-toggle {
-        display: block;
-    }
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: white;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 0;
-        line-height: 1px;
-    }
-    nav ul li {
-        margin: 10px 0;
-        text-align: center;
-    }
-    nav ul li a {
-        padding: 10px 0;
-        width: 100%;
-    }
-    #close {
-        display: none;
-    }
-}
-.open nav ul {
-  transform: translateX(0); /* Slide navigation on-screen when menu is open */
-}
-
-.open nav {
-  opacity: 1; /* Show background color when menu is open */
-}
-
-@media (max-width: 480px) { /* iPhone avec petite ecran */
-    .logo img {
-        height: 30px;
-    }
-    nav ul {
-        top: 50px;
-    }
-}
-
-@media (max-width: 320px) { /* plus petite ecran */
-    .wrapper .container {
-      flex-direction: row;
-        font-size: 18px;
-        color: red;
-        background-color: yellow;
-    }
-    
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.text {
-  max-width: 50%;
-}
-.image {
-  max-width: 50%;
-}
-@media (max-width: 768px) {
+/* Pour les tablettes */
+@media (max-width: 768px) { 
+  .menu-toggle {
+      display: block;
+  }
+  nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 0;
+      line-height: 1px;
+  }
+  nav ul li {
+      margin: 10px 0;
+      text-align: center;
+  }
+  nav ul li a {
+      padding: 10px 0;
+      width: 100%;
+  }
+  #close {
+      display: none;
+  }
   .container {
       flex-direction: column;
       align-items: flex-start;
@@ -786,277 +776,205 @@ nav .active{
   .text {
       margin-bottom: 20px;
   }
-}
-
-.banner {
-  background-color: #007bff;
-  color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-  height: 270px;
-  flex-direction: row;
-}
-.baner-right {
-  max-width: 40%;
-  color: white;
-  text-align: center;
-  margin-top: -10px;
-}
-.banner_items {
- margin-left: 5px;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: auto;
-}
-/* .box {
-  color: rgb(177, 11, 11);
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  width: 150px;
-} */
-@media (max-width: 768px) {
   .banner {
       flex-direction: column;
       align-items: flex-start;
+      height: auto;
   }
-  .text, .boxes {
-      max-width: 100%;
+  .baner-right {
+      width: 100%;
+      text-align: center;
   }
-  .ban {
+  .banner_items {
+      margin-left: 0;
+      gap: 20px;
+  }
+  .services {
+      flex-wrap: wrap;
+      background-color: white;
+      margin-top: 10px;
+      align-items: center;
+  }
+  .services .image {
+      width: 100%;
+      margin: 0;
+  }
+  .services .service-content {
+      padding-left: 0;
+  }
+  .servicebt {
+      display: flex;
+      gap: 10px;
+      margin-left: 0;
+  }
+  .services .service-content h3 {
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+  }
+  .docourserv {
+      color: black;
+      margin-top: 200px;
+  }
+  .tresourserv {
+      background-color: #bcbcbc9e;
+      width: 100%;
+  }
+  .specialkey {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+      align-items: center;
+      margin-top: 150px;
+  }
+  .specialkey::after {
+      display: none;
+  }
+  .special, .key {
+      text-align: center;
+      width: 100%;
+  }
+  .key h2 {
+      text-align: center;
+  }
+  .specialitems {
+      flex-wrap: wrap;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 40px;
+  }
+  .specialitems .items {
+      margin: 10px auto;
+      width: 80%;
+  }
+  .doc {
+      color: black;
+      margin-top: 50px;
+      font-size: 1.4rem;
+  }
+  .specialkeywheare {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 100px;
+      align-items: center;
+  }
+  .specialkeywheare::after {
+      display: none;
+  }
+  .specialhw, .keywho {
+      text-align: center;
+      width: 100%;
+  }
+  .keywho h2 {
+      text-align: center;
+  }
+  .treshware {
+      background-color: #bcbcbc9e;
+      width: 100%;
+      margin-left: 0;
+      height: 2px;
+  }
+  .docwhoware {
+      color: black;
+      margin-top: 1100px;
+      text-align: center;
+      margin-left: 0;
+      width: 100%;
+      font-size: 1.4rem;
+  }
+  .docwhoware h2 {
+      text-align: center;
+  }
+  .ourhistory {
+      flex-direction: column;
+      margin-top: 140px;
+  }
+  .ourhistory .left img {
+      width: 100%;
+      margin: 10px auto;
+      height: auto;
+  }
+  .ourhistory .historytext {
+      margin-top: 0;
+      align-items: center;
+      margin-left: 0;
+      font-size: 1rem;
+      height: auto;
+  }
+  .ourhistory .historytext p, .ourhistory .historytext h4 {
+      margin-left: 0;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 10px;
+  }
+  .ourhistory .historytext h4 {
+      color: black;
+      font-size: 1rem;
+  }
+  .ourhistory::after {
+      display: none;
+  }
+  .cercleimage {
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: 40px;
+  }
+  .doctorbtn {
+      margin-top: 20px;
+  }
+  .tresapp {
+      background-color: #bcbcbc9e;
+      margin-left: 0;
+      width: 100%;
+  }
+  .contact {
+      flex-direction: column;
+  }
+  .Subscribe {
+      width: 100%;
+      margin-left: 0;
+      margin-top: -5px;
+  }
+  .Subscribe h2 {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+  .subsgrpform {
+      margin-left: 0;
+      width: 100%;
+  }
+  .footersecs {
+      height: auto;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+  }
+  .sec1, .sec2, .sec3 {
+      border-right: none;
+  }
+  .copyright {
       margin-top: 20px;
   }
 }
 
-@media (max-width: 768px) {
-  /* Adjust layout for smaller screens */
-  .services {
-    flex-wrap: wrap;
-    background-color: white;
-    margin-top: 10px;
-    align-items: center;
+/* Pour les iPhones avec petit écran */
+@media (max-width: 480px) {
+  .logo img {
+      height: 30px;
   }
-
-  .services .image {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 40;
-    margin-top: 0px;
-  }
-
-  .services .service-content {
-    padding-left: 0;
-   
-    flex-wrap: wrap;
-    
-  }
-
-  .servicebt {
-    color: black;
-    display: flex;
-    gap:  10px;
-    margin-left: -20px;
-  }
-
-  .services .service-content h3 {
-    margin-left: 0;
-    margin-top: 20px;
-    color: black;
-    text-align: center;
+  nav ul {
+      top: 50px;
   }
 }
 
-@media (max-width: 768px) {
-  /* Adjust layout for smaller screens */
-  .specialkey {
-    flex-direction: column;
-    width: 100%;  /* Make it full width */
-    margin-left: 0;  /* Remove left margin */
-    align-items: center;
-    margin-top: 150px;
-    
+/* Pour les plus petits écrans */
+@media (max-width: 320px) {
+  .wrapper .container {
+      flex-direction: column;
+      font-size: 18px;
+      color: red;
+      background-color: yellow;
   }
-
-  .specialkey::after {
-    display: none;  /* Hide the underline on smaller screens */
-  }
-
-  .special,
-  .key {
-    text-align: center;  /* Center both text sections */
-    width: 100%;  /* Make them full width */
-    font-size: 1px;
-  }
-
-  .key h2 {
-    margin-right: auto; 
-    text-align: center; /* Center the heading horizontally */
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Adjust layout for smaller screens */
-  .specialitems {
-    flex-wrap: wrap; /* Stack items vertically */
-    width: 100%;  /* Make it full width */
-    margin-left: 0;  /* Remove left margin */
-  }
-
-  .specialitems .items {
-    margin: 10px auto;  /* Add margin around each item */
-    width: 80%;  /* Make items narrower for smaller screens */
-  }
-}
-
-@media (max-width: 768px) {
-  /* Adjust layout for smaller screens */
-  .specialkeywheare {
-    flex-direction: column;
-    width: 100%;  /* Make it full width */
-    margin-left: 0;  /* Remove left margin */
-    font-size: 1rem;
-    margin-top: 1050px;
-    align-items: center;
-  }
-
-  .specialkeywheare::after {
-    display: none;  /* Hide the underline on smaller screens */
-  }
-
-  .specialhw,
-  .keywho {
-    text-align: center;  /* Center both text sections */
-    width: 100%;  /* Make them full width */
-    text-align: center;
-  }
-
-  .keywho h2 {
-    margin-right: auto;  /* Center the heading horizontally */
-    
-  } 
-  .treswhware {
-
-    background-color:  #bcbcbc9e;
-    width: 480px;
-    margin-left: -100px;
-    height: 2px;
-    margin-top: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Adjust layout for smaller screens */
-  .ourhistory {
-    flex-direction: column;  /* Stack elements vertically */
-  }
-
-  .ourhistory .left img {
-    width: 150%;  /* Make image full width */
-    margin: 10px auto;
-    height: auto;  /* Add margin around image */
-    margin-top: -100px;
-  }
-
-  .ourhistory .historytext {
-    margin-top: 0;  /* Remove top margin on text section */
-    align-items: center;
-    margin-left: -30px;
-    font-size: 1;
-    height: 200px;
-  }
-
-  .ourhistory .historytext p,
-  .ourhistory .historytext h4 {
-    margin-left: 10px;  /* Adjust text margins for smaller screens */
-    color:#777777;
-    font-size: 15px;
-    /* background-color: red; */
-    margin-top: 10px;
-  }
-  .ourhistory .historytext h4 {
-    color: black;
-    margin-top: 10px;
-    font-size: 1rem;
-  } 
-
-  .ourhistory::after {
-    display: none;  /* Hide the underline on smaller screens */
-  }
- .doc {
- 
-  margin-top: -100px;
- }
- .tres {
-  background-color:  #bcbcbc9e;
-  margin-left: 30px;
-  width: 450px;
- }
-
- .cercleimage {
-  flex-direction: column;
-  margin-left: auto;
-  margin-top: 30px;
- }
-
- .doctorbtn {
-  margin-top: 20px;
- }
-
- .tresapp {
-  background-color:  #bcbcbc9e;
-  margin-left: 40px;
-  width: 440px;
- }
- .contact {
-  flex-direction: column;
- }
- 
- .Subscribe {
-  width: 480px;
-  margin-left: 10px;
-  margin-top: -5px;
- }
- 
- .Subscribe h2 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-left: 10px;
-  margin-top: -10px;
-  
- }
- .subsgrpform {
-   margin-left: auto;
-   width: 300px;
-   margin-left: -18px;
- }
- 
- .footersecs {
-  height: 800px;
-  flex-direction: column;
-  align-items: center;
- }
- .sec1  {
-  border-right: none;
- }
- .sec2 {
-  border-right: none;
- }
-
- .sec3 {
-  border-right: none;
- }
- .copyright {
-  margin-top: 20px;
- }
- 
 }
 
 

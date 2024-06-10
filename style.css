@@ -533,8 +533,8 @@ nav .active{
           
     .contact img {
         border-radius: 20px;
-        height: 500px;
-        width: 400px;
+        height: 480px;
+        width: 350px;
         margin-left: 80px;
         margin-top: 60px;
       }
@@ -542,7 +542,7 @@ nav .active{
     
     .contact{
     display: flex;
-    max-width: 80px;
+    max-width: 50px;
     }
     
     .contactform {
@@ -940,12 +940,10 @@ justify-content: center;
   }
   .contact {
       flex-direction: column;
-      width: 100px;
-      height: 100px;
+      width: 80px;
   }
   .contac img {
-    background-color: red;
-    width: 60px;
+    width: 40px;
     height: 100px;
   }
   .telephone input {
@@ -953,26 +951,27 @@ justify-content: center;
   }
 
   .phone input  {
-    background-color: red;
     width: 200px;
   }
-  .contactgroup button {
-    background-color: green;
-  }
+  
   
   .contactgroup {
     width: 180px;
   }
   #message {
-    background-color: rebeccapurple;
-    width: 442px;
+    
+    width: 440px;
+  }
+  .contactgroup button {
+
+    width: 435px;
   }
 
   @media (max-width: 768px) {
     .Subscribe {
         padding: 20px;
         max-width: 95%;
-        
+        margin-top: 40px;
         height: 250px;
     }
 

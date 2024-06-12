@@ -19,28 +19,23 @@
   }
   
   .contenaireform {
-    background-color: #2744d6;
+   
     /* margin-top: 80px; */
     
   
   }
   form {
-    position: absolute;
-    width: 420px;
-    top: 50%;
-    left: 50%;
-    /* bottom: 50%; */
-    transform: translate(-50%, -50%);
-    /* height: 100vh; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* padding: 50px; */
-    padding-top: 50px;
-    margin: auto;
-    /* margin-top: 50px; */
-    border: 2px solid #516EFF;
-    height: 400px;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            border: 2px solid #516EFF;
+            border-radius: 10px;
+            background-color: #fff;
+            width: 30%;
+            position: relative;;
+            top: 110px;
+            left: 450px;
     
 }
 
@@ -53,16 +48,17 @@ h2 {
 
 label {
   font-size: 14px;
-  text-align: start;
-  margin-bottom: -5px;
-  margin-left: 50px;
-  border-radius: 5px;
+            width: 100%;
+            margin-bottom: 0px;
+            position: relative;
+          left: 40px; 
 }
 input {
-  width: 320px;
-  padding: 5px 10px ;
-  margin: 10px;
- margin: auto;
+  width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
  
 }
 
@@ -194,18 +190,17 @@ margin-bottom: 30px;
             <label for="email">Email </label>
             <input type="email" name="email" id="email"  placeholder="Email" required />
 
-            <div class="password-forget">
+            
                 <label for="password">Password</label>
-            </div>
-            <input type="password" name="password" id="password"  placeholder="Password" required />
+                <input type="password" name="password" id="password"  placeholder="Password" required />
+
             <input type="submit" name="submit" value="Login" id="submit"/>
         
             <a href="#">foget password ?</a>
             <p class="separator">Or</p>
             <input type="submit" name="submit" value="Creat an Acount" id="submit" />
            
-        </div>
-        
+        </form>
     
     </section>
 </body>

@@ -17,29 +17,42 @@
     font-family: Arial, Helvetica, sans-serif;
     
   }
-  contenaireform {
-    background-color: #2744d6;
-    /* margin-top: 80px; */
   
-  }
+/*   
   form {
     position: absolute;
-    width: 420px;
-    top: 60%;
+    width: 30%;
+    height: 82%;
+    top: 360px;
     left: 50%;
     /* bottom: 50%; */
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     /* height: 100vh; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
     /* padding: 50px; */
-    padding-top: 50px;
-    margin: auto;
+    /* padding-top: 50px; */
+    /* margin: auto; */
     /* margin-top: 50px; */
-    border: 2px solid #516EFF;
+    /* border: 2px solid #516EFF; */
+
     
-}
+/* } */ 
+
+form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            border: 2px solid #516EFF;
+            border-radius: 10px;
+            background-color: #fff;
+            width: 30%;
+            position: relative;;
+            top: 110px;
+            left: 450px;
+        }
 
 h2 {
   margin-left: 10px;
@@ -49,20 +62,41 @@ h2 {
 }
 
 label {
-  font-size: 14px;
+  /* font-size: 14px;
   text-align: start;
   margin-bottom: -5px;
-  margin-left: 50px;
+  
   border-radius: 5px;
+  position: relative;
+  right: 10px; */
+
+  font-size: 14px;
+            width: 100%;
+            margin-bottom: 0px;
+            position: relative;
+          left: 40px; 
+
 }
-input {
+/* 
+form input {
   width: 320px;
   padding: 5px 10px ;
   margin: 10px;
   margin:10px auto;
-  
- 
-}
+  border:  1px solid black;
+  border-top: 0.1px solid red;
+  border-bottom: 0.2px solid black; 
+} */
+
+
+form input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 40px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            /* border-radius: 5px; */
+        }
 
 #submit { 
   background-color: #516EFF;
@@ -178,7 +212,7 @@ margin-bottom: 30px;
                     
             </header> 
            
-    <section class="contenaireform">
+    <section id="contenaireform">
         <form action="">
           <div class="menu">
             <a href="index.html"> <img src="images/home.png" alt="" width="25"></a>
@@ -190,21 +224,23 @@ margin-bottom: 30px;
             <label for="email">Email </label>
             <input type="email" name="email" id="email"  placeholder="Email" required />
 
-            <div class="password-forget">
+            
                 <label for="password">Password</label>
-            </div>
-            <input type="password" name="password" id="password"  placeholder="Password" required />
+                <input type="password" name="password" id="password"  placeholder="Password" required />
 
-            <div class="password-forget">
-                <label for="password">Cinfirm Password</label>
-            </div>
-            <input type="password" name="password" id="password"  placeholder="Password" required />
+        
+            
+          
+                <label for="password">Coinfirm Password</label>
+                <input type="password" name="password" id="password"  placeholder="Password" required />
+      
+           
 
             <input type="submit" name="submit" value="Login " id="submit" /> 
             
             <input type="submit" name="submit" value="Creat an Acount" id="submit" />
            
-        </div>
+        </form>
         
     
     </section>

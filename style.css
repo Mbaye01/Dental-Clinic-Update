@@ -231,14 +231,12 @@ nav .active{
   height: 40px;
 }
 
-
   .specialitems {
     height: 570px;
     width: 80%;
       margin-left: 150px;
       display: flex;
       flex-wrap: wrap;
-      /* padding-left: 100px; */
     }
     
     .specialitems .items {
@@ -274,23 +272,18 @@ nav .active{
     .treshware {
         background-color: #D9D9D9;
         height: 2px;
-        
     }
     
 
-      .ourhistory .historytext{
+    .ourhistory .historytext{
         background-color: #f8fafc;
           border-radius: 10px;
           height: 300px;
           margin-top: 30px;
-        }
+    }
 
-        .keywho h2 {
-          color: red;
-
-        }
         
-        .historytext p{
+    .historytext p{
           color: #777777;
           margin-left: 50px;
           font-size: 22px;
@@ -398,24 +391,22 @@ nav .active{
         }
           
 
-          .tresapp {
+    .tresapp {
             height: 2px;
-            background-color: #D9D9D9;
-           
-            
-          }
-          .appoitmnt {
+            background-color: #D9D9D9;          
+    }
+    .appoitmnt {
             color: black;
             width: auto;
             
-          }
+    }
 
-          .appoitmnt h2{
+    .appoitmnt h2{
             text-align: center;
             font-weight: bold;
             font-size: 2rem;
             margin-top: 100px;
-          }
+    }
 
           
     .contact img {
@@ -490,8 +481,6 @@ nav .active{
     .check{
       margin-left: 30px;
     }
-
-
        
        .Subscribe {
         background-color: #236483;
@@ -515,16 +504,16 @@ nav .active{
     }
     
     .subsgrpform button {
-        width: 120px; /* Largeur fixe similaire à l'exemple */
-        height: 40px; /* Hauteur fixe similaire à l'exemple */
+        width: 120px; 
+        height: 40px; 
         border-radius: 5px;
         border: #86aabc;
         margin-left: 10px;
     }
     
     .subsgrpform input {
-        width: 200px; /* Largeur fixe similaire à l'exemple */
-        height: 40px; /* Hauteur fixe similaire à l'exemple */
+        width: 200px; 
+        height: 40px; 
         background-color: #86aabc;
         border-radius: 5px;
         border: navy;
@@ -591,15 +580,12 @@ nav .active{
       
       }
       .sec4 {
-        /* border-right: 1px solid beige; */
         width: 260px;
         margin-left: 50px;
         height: 180px;
         margin-top: 20px;
       }
-      
-      
-      
+        
       .copyright {
         background-color: #40739e;
         height: 50px;
@@ -613,9 +599,6 @@ nav .active{
         margin-top: 20px;
       }
     
-      
-  
-  
   
 .menu-toggle {
     display: none;
@@ -630,8 +613,8 @@ nav .active{
   color: rgb(66, 65, 65) ;
 }
 
-/* Media Queries */
-/* Pour les tablettes */
+/* media queries pour les mobile et tablette*/
+
 @media (max-width: 768px) { 
   .menu-toggle {
       display: block;
@@ -656,7 +639,7 @@ nav .active{
   }
   nav ul li a {
       padding: 10px 0;
-      /* width: 100%; */
+      
   }
   #close {
       display: none;
@@ -981,7 +964,7 @@ justify-content: center;
 
     .subsgrpform input, .subsgrpform button {
         width: 100%;
-        max-width: 300px; /* Largeur maximale pour les petits écrans */
+        max-width: 300px; 
         margin-bottom: 10px;
     }
     .subsgrpform button {
@@ -1007,7 +990,7 @@ justify-content: center;
   }
 }
 
-/* Pour les iPhones avec petit écran */
+
 @media (max-width: 480px) {
   .logo img {
       height: 30px;
@@ -1017,7 +1000,7 @@ justify-content: center;
   }
 }
 
-/* Pour les plus petits écrans */
+
 @media (max-width: 320px) {
   .wrapper .container {
       flex-direction: column;

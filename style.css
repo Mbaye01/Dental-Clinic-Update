@@ -10,7 +10,7 @@ header {
     width: 100%;
     /* min-height: 100vh; */
     background-color: #ffff;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .wrapper {
     width: 80%;
@@ -24,8 +24,7 @@ nav {
     height: 100px;
     background-color: #ffffff;
     z-index: 4;
-    /*  */
-    box-shadow: 0px 2px rgb(170, 168, 168);
+    box-shadow: 0px 1px #BCBCBC;
     position: fixed;
     left: 0px;
     right: 0px;
@@ -34,6 +33,7 @@ nav {
     margin: right 400px;
     width: 100%;
 }
+ 
 
 nav .logo{
     display: flex;
@@ -55,7 +55,7 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: #bcbc9c;
+    color: #52525B;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -143,7 +143,8 @@ nav .active{
     background-color: #007bff;
     text-align: center;
     align-content: center;
-    margin-top: 80px;
+    margin-top: 5px;
+    color: white;
   }
   .baner-left {
     display: flex;
@@ -166,8 +167,8 @@ nav .active{
     margin-top: 200px;
   }
   .tresourserv {
-    background-color: #bcbcbc9e;
-    width: 1000px;
+    background-color: #D9D9D9;
+    width: auto;
     height: 2px;
     margin: auto;
     
@@ -179,103 +180,57 @@ nav .active{
     text-align: center;
     font-size: 2rem;
   }
-
-  .services {
-    height: 500px;
-    background-color: #ffffff;
+  .provides {
     display: flex;
+}
+
+.provide {
+   display: flex;
+   height: 350px;
+   border-bottom-right-radius: 80px;
+   width:40%;
+}
+
+.provide img {
+    width: 60%;
+    height: 280px;
     margin-top: 40px;
-  }
-  .servicebt{
-    display: flex;
-    flex-direction: column;
-  }
-  .servleftright{
-    display: flex;
-    font-size: 25px;
-  }
-  .services .image img {
-    width:300px;
-    height: 300px;
-    margin-top: 70px;
-    margin-left: 100px;
-  
-  }
-  
-  .services .image {
-    width: 30%;
-    border-bottom-right-radius: 100px;
-    height: 400px;
-  }
-  
-  .services .service-content {
-    display: flex;
-    padding-left:80px ;
-  }
-  
-  .servleft {
-    /* border: 1px solid black; */
-    width: 250px;
-    height: 250px;
-    padding: 50px;
-  }
-  .servleft div{
-   margin-bottom: 15px;
-  }
-  
-  .services .service-content h3 {
-    margin-top: 50px;
-    margin-left: 200px;
-    font-size: 30px;
-    margin-top: 100px;
-  
-  }
+    margin-left: 80px;
+}
+ .chekprovides {
+    margin-left: 40px;
+    width: 130%;
+    margin-top: 80px;
+    font-size: 1.3rem;
+}
+.provs {
+  display: flex;
+  width: 105%;
+  height: 300px;
+}
+.titlepro h2 {
+  text-align: center;
+  margin-top: 40px;
+}
 
-  .specialkey {
-    height: 130px;
-    display: flex;
-    width: 80%;
-    margin-left: 120px;
-    margin-top: 10px;
-  }
-  .specialkey::after {
-    content: "";
-    width: 67%;
-    height: 2px;
-    left: 300px;
-    transform:translateY(80px);
-    position: absolute;
-    background-color: #bcbcbc9e;
-  }
-  
-  .special {
-    width: 50%;
-    font-size: 40px;
-    
-  }
-  
-  .special span {
-  font-size: 45px;
-  font-weight: 600;
-  
-  }
-  .specialkey .key {
-    width: 40%;
-    font-size: 25px;
-    text-align: right;
-    margin-top: 30px;
-    margin-right: 30px;
-  }
-  .key span {
-    color: #ffd700;
-  }
+.chekprov {
+    margin-left: 40px;
+    width: 160%;
+    margin-top: 80px;
+    font-size: 1.4rem;
+}
 
-  .key h2 {
-    color: black;
-    text-align: center;
-    margin-right: 1000px;
-    display: flex;
-  }
+.chekprov{
+    font-size: 1.3rem;
+}
+
+.titleprov {
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+  height: 40px;
+}
+
 
   .specialitems {
     height: 570px;
@@ -304,8 +259,8 @@ nav .active{
       color: black;
       margin-top: 50px;
       font-size: 1.5rem;
-      width: 1120px;
-      margin-left: 100px;
+      width: auto;
+      
     }
     .docwhoware span{
       text-align: center;
@@ -317,52 +272,11 @@ nav .active{
     } 
 
     .treshware {
-        color: #ffd700;
-        background-color: #bcbcbc9e;
+        background-color: #D9D9D9;
         height: 2px;
-        align-items: center;
-        width: auto;
+        
     }
     
-    .specialkeywheare {
-        height: 130px;
-        display: flex;
-        width: 80%;
-        margin-left: 120px;
-        margin-top: 10px;
-        align-items: center;
-      }
-      .specialkeywheare::after {
-        content: "";
-        width: 67%;
-        height: 2px;
-        left: 300px;
-        transform:translateY(80px);
-        position: absolute;
-        background-color: #bcbcbc9e;
-      }
-      
-      .specialhw {
-        width: 50%;
-        font-size: 30px;
-        
-      }
-      
-      .specialhw span {
-      font-size: 45px;
-      font-weight: 600;
-      
-      }
-      .specialkeywheare .keywho {
-        width: 50%;
-        font-size: 25px;
-        text-align: right;
-        margin-top: 30px;
-        margin-right: 30px;
-      }
-      .keywho span {
-        color: #00ff6a;
-      }
 
       .ourhistory .historytext{
         background-color: #f8fafc;
@@ -396,38 +310,26 @@ nav .active{
           margin-top: 10px;
           margin-right: 30px;
         }
-        .history span {
-          font-weight: bold;
-        }
         
-        .hwarhistory::after {
-          content: "";
-          width: 70%;
-          height: 2px;
-          left: 95px;
-          transform:translateY(60px);
-          position: absolute;
-          background-color: #bcbcbc9e;
-        
-        }
         
         .docmeet {
           text-align: center;
           font-size: 1.5rem;
+          width: auto;
+          margin-left: 10px;
         }
         .tresdoc {
-          background-color: #bcbcbc9e;
-          width: 1200px;
+          background-color: #D9D9D9;
           height: 2px;
-          align-items: center;
-          margin-left: 70px;
+          
+         
+          
         }
         .docmeet span {
           color: #ffd700;
         }
          
         .cercleimage {
-          background-color: #ffffff;
           display: flex;
           margin-top: 20px;
           margin-right: 60px;
@@ -436,12 +338,16 @@ nav .active{
           margin-left: 150px;
           margin-top: 150px;
           font-size: 14px;
+
         }
         .docs{
           text-align: center;
           align-content: center;
           border: 1px solid #bcbcbc9e;
+          width: 22%;
+          padding: 10px;
         }
+        
         .contacte p, h1{
           width: 50px;
           text-align: left;
@@ -460,28 +366,9 @@ nav .active{
           border: #007bff;
           border-radius: 10px;
           border: 2px solid #007bff;
-          margin-top: 50px;
+          margin-top: 30px;
+          background-color: white;
         }
-        
-        .baner3 {
-        
-          justify-content: center; 
-          background-color: #007bff;
-          color: #ffffff;
-          padding: 20px;
-          display: flex;
-          margin-top: 10px;
-        }
-        
-        .baner3 h1 {
-        color: #ffffff;
-        font-size: 20px;
-        }
-        
-        .baner3 span{
-          font-weight: bold;
-        }
-        
         
         .ourhistory {
         width: 80%;
@@ -512,15 +399,15 @@ nav .active{
           
 
           .tresapp {
-            width: 1200px;
-            margin-left: 80px;
             height: 2px;
-            background-color: #bcbcbc9e;
-            margin-top: 5px;
+            background-color: #D9D9D9;
+           
+            
           }
           .appoitmnt {
             color: black;
-            text-align: center;
+            width: auto;
+            
           }
 
           .appoitmnt h2{
@@ -642,6 +529,13 @@ nav .active{
         border-radius: 5px;
         border: navy;
         margin-right: 10px;
+    }
+    input[type="text"]::-webkit-input-placeholder {
+      color: white;
+    }
+    
+    input[type="email"]::-webkit-input-placeholder {
+      color: white;
     }
     
     .Subscribe h2 {

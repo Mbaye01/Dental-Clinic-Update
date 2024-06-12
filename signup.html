@@ -17,20 +17,28 @@
     font-family: Arial, Helvetica, sans-serif;
     
   }
-
-form {
-  position: relative;
-  width: 400px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 50px;
-  background-color: white;
-  margin: auto;
-  margin-top: 50px;
-  border: 2px solid #516EFF;
-
+  contenaireform {
+    background-color: #2744d6;
+    /* margin-top: 80px; */
+  
+  }
+  form {
+    position: absolute;
+    width: 420px;
+    top: 60%;
+    left: 50%;
+    /* bottom: 50%; */
+    transform: translate(-50%, -50%);
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 50px; */
+    padding-top: 50px;
+    margin: auto;
+    /* margin-top: 50px; */
+    border: 2px solid #516EFF;
+    
 }
 
 h2 {
@@ -44,17 +52,17 @@ label {
   font-size: 14px;
   text-align: start;
   margin-bottom: -5px;
-  margin-left: 10px;
+  margin-left: 50px;
   border-radius: 5px;
-
 }
 input {
   width: 320px;
   padding: 5px 10px ;
   margin: 10px;
+  margin:10px auto;
+  
  
 }
-
 
 #submit { 
   background-color: #516EFF;
@@ -62,8 +70,8 @@ input {
   font-weight: bold;
   font-size: 18px;
   border-radius: 10px;
-  border-bottom: #2744d6;
-  border: none;
+  background-color: red;
+  
   
 }
 #submit:hover {
@@ -74,13 +82,106 @@ input {
 
 
 
+#submit { 
+  background-color: #516EFF;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  border: navy;
+
+}
+#submit:hover {
+  background-color: #2744d6;
+  cursor: pointer;
+  transition-duration: 0.75s;
+}
+
+
+.sign-with{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+button{
+  padding: 8px 3px;
+  border-radius: 5px;
+  border: 1px var(--black50) solid;
+  background-color: var(--white);
+  
+
+}
+
+button:hover {
+  background-color: var(--signihoverColor);
+  cursor: pointer;
+  transition-duration: 0.5s;
+
+}
+.separator {
+    color: #516EFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+a { 
+  /* color: var(--blue); */
+  color: #516EFF;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* code CSS aproprié  à la page de Sign Up */
+.get-start {
+margin-bottom: 30px;
+}
+.or {
+  margin: 0px;
+}
+.or::after { 
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 1px;
+  left: 63px;
+  bottom: 135px;
+  background-color: var(--black50);
+}
+.or::before { 
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 1px;
+  right: 75px;
+  bottom: 135px;
+  background-color: var(--black50);
+}
         </style>
               
+              <header>
+                <div class="wrapper"> 
+                    <nav>
+                        <div class="logo">
+                            <img src="images/logo.png" alt="logo"> 
+                        </div>
+                        <div class="menu-toggle" id="hamburger">&#9776;</div>
+                        <div class="menu-toggle" id="close">&#10005;</div>
+                        <ul>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="index.html">About Us</a></li>
+                            <li><a href="index.html">Appointment</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="login.html" class="btn active">Login</a></li>
+                        </ul>
+                    </nav>
+                    
+            </header> 
            
-    <section class="contenaire">
+    <section class="contenaireform">
         <form action="">
           <div class="menu">
-            <a href="index.html"> <img src="images/logo.png" alt="" width="100"></a>
+            <a href="index.html"> <img src="images/home.png" alt="" width="25"></a>
           </div>
             <h2 class="get-start">Sign Up</h2>
            

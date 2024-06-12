@@ -7,25 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-           
-        <style>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    
-  }
-  
-  .contenaireform {
-   
-    /* margin-top: 80px; */
-    
-  
-  }
-  form {
-    display: flex;
+        form {
+            display: flex;
             flex-direction: column;
             align-items: center;
             padding: 5px;
@@ -33,175 +24,180 @@
             border-radius: 10px;
             background-color: #fff;
             width: 30%;
-            position: relative;;
+            position: relative;
             top: 110px;
             left: 450px;
-    
-}
+        }
 
-h2 {
-  margin-left: 10px;
-  color: #516EFF;
-  text-align: center;
-  
-}
+        h2 {
+            margin-left: 10px;
+            color: #516EFF;
+            text-align: center;
+        }
 
-label {
-  font-size: 14px;
+        label {
+            font-size: 14px;
             width: 100%;
             margin-bottom: 0px;
             position: relative;
-          left: 40px; 
-}
-input {
-  width: 80%;
+            left: 40px;
+        }
+
+        input {
+            width: 80%;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 3px;
- 
-}
+        }
 
-#submit { 
-  background-color: #516EFF;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 10px;
-  background-color: red;
-  
-  
-}
-#submit:hover {
-  background-color: #2744d6;
-  cursor: pointer;
-  transition-duration: 0.75s;
-}
+        #submit {
+            background-color: #516EFF;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 10px;
+            border: navy;
+        }
 
+        #submit:hover {
+            background-color: #2744d6;
+            cursor: pointer;
+            transition-duration: 0.75s;
+        }
 
+        .sign-with {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 20px;
+        }
 
-#submit { 
-  background-color: #516EFF;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 10px;
-  border: navy;
+        button {
+            padding: 8px 3px;
+            border-radius: 5px;
+            border: 1px var(--black50) solid;
+            background-color: var(--white);
+        }
 
-}
-#submit:hover {
-  background-color: #2744d6;
-  cursor: pointer;
-  transition-duration: 0.75s;
-}
+        button:hover {
+            background-color: var(--signihoverColor);
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
 
+        .separator {
+            color: #516EFF;
+            text-align: center;
+            font-weight: bold;
+        }
 
+        a {
+            color: #516EFF;
+            text-align: center;
+            text-decoration: none;
+        }
 
-.sign-with{
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 20px;
-}
-button{
-  padding: 8px 3px;
-  border-radius: 5px;
-  border: 1px var(--black50) solid;
-  background-color: var(--white);
-  
+        .get-start {
+            margin-bottom: 30px;
+        }
 
-}
+        .or {
+            margin: 0px;
+        }
 
-button:hover {
-  background-color: var(--signihoverColor);
-  cursor: pointer;
-  transition-duration: 0.5s;
+        .or::after {
+            position: absolute;
+            content: "";
+            width: 150px;
+            height: 1px;
+            left: 63px;
+            bottom: 135px;
+            background-color: var(--black50);
+        }
 
-}
-.separator {
-    color: #516EFF;
-    text-align: center;
-    font-weight: bold;
-}
+        .or::before {
+            position: absolute;
+            content: "";
+            width: 140px;
+            height: 1px;
+            right: 75px;
+            bottom: 135px;
+            background-color: var(--black50);
+        }
 
-a { 
-  /* color: var(--blue); */
-  color: #516EFF;
-  text-align: center;
-  text-decoration: none;
-}
+        /* Media Queries */
+        @media (max-width: 768px) {
+            form {
+                width: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 100px;
+            }
 
-/* code CSS aproprié  à la page de Sign Up */
-.get-start {
-margin-bottom: 30px;
-}
-.or {
-  margin: 0px;
-}
-.or::after { 
-  position: absolute;
-  content: "";
-  width: 150px;
-  height: 1px;
-  left: 63px;
-  bottom: 135px;
-  background-color: var(--black50);
-}
-.or::before { 
-  position: absolute;
-  content: "";
-  width: 140px;
-  height: 1px;
-  right: 75px;
-  bottom: 135px;
-  background-color: var(--black50);
-}
+            label {
+                left: 20px;
+            }
 
+            input {
+                width: 90%;
+                margin: 10px 20px;
+            }
+        }
 
+        @media (max-width: 480px) {
+            form {
+                width: 80%;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 50px;
+            }
 
+            label {
+                left: 10px;
+            }
 
-        </style>
+            input {
+                width: 95%;
+                margin: 10px 10px;
+            }
+        }
+    </style>
         
-        <header>
-          <div class="wrapper"> 
-              <nav>
-                  <div class="logo">
-                      <img src="images/logo.png" alt="logo"> 
-                  </div>
-                  <div class="menu-toggle" id="hamburger">&#9776;</div>
-                  <div class="menu-toggle" id="close">&#10005;</div>
-                  <ul>
-                      <li><a href="#" class="active">Home</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="index.html">About Us</a></li>
-                      <li><a href="index.html">Appointment</a></li>
-                      <li><a href="signup.html">Sign Up</a></li>
-                      <li><a href="login.html" class="btn active">Login</a></li>
-                  </ul>
-              </nav>
-              
-      </header> 
+    <header>
+        <div class="wrapper"> 
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo"> 
+                </div>
+                <div class="menu-toggle" id="hamburger">&#9776;</div>
+                <div class="menu-toggle" id="close">&#10005;</div>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="index.html">Appointment</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="login.html" class="btn active">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
            
     <section class="contenaireform">
         <form action="">
-          <div class="menu">
-            <a href="index.html"> <img src="images/home.png" alt="" width="25"></a>
-          </div>
+            <div class="menu">
+                <a href="index.html"> <img src="images/home.png" alt="" width="25"></a>
+            </div>
             <h2 class="get-start">Login</h2>
-            <label for="email">Email </label>
-            <input type="email" name="email" id="email"  placeholder="Email" required />
-
-            
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password"  placeholder="Password" required />
-
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required />
             <input type="submit" name="submit" value="Login" id="submit"/>
-        
-            <a href="#">foget password ?</a>
+            <a href="#">Forget password?</a>
             <p class="separator">Or</p>
-            <input type="submit" name="submit" value="Creat an Acount" id="submit" />
-           
+            <input type="submit" name="submit" value="Create an Account" id="submit" />
         </form>
-    
     </section>
 </body>
 </html>

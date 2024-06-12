@@ -324,9 +324,9 @@
    
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    var hamburger = document.getElementById('hamburger');
-    var close = document.getElementById('close');
-    var navUl = document.querySelector('nav ul');
+    const hamburger = document.getElementById('hamburger');
+    const close = document.getElementById('close');
+    const navUl = document.querySelector('nav ul');
 
     hamburger.addEventListener('click', function() {
         navUl.style.display = 'flex';
@@ -340,6 +340,8 @@ document.addEventListener('DOMContentLoaded', function() {
         close.style.display = 'none';
     });
 });
+
+
 </script>
 
 </body>
